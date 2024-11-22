@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Google Sans', Roboto, Arial, sans-serif;
+    background-color: #f1f3f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.google-form-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-title {
+    color: #202124;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.form-subtitle {
+    color: #5f6368;
+    margin-top: 10px;
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #5f6368;
+    font-size: 14px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.2s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #1a73e8;
+    box-shadow: 0 0 0 2px rgba(26,115,232,0.2);
+}
+
+.name-row {
+    display: flex;
+    gap: 15px;
+}
+
+.name-row .form-section {
+    flex: 1;
+}
+
+.required-mark {
+    color: #d93025;
+    margin-left: 4px;
+}
+
+.form-submit-btn {
+    width: 100%;
+    padding: 13px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.form-submit-btn:hover {
+    background-color: #185abc;
+}
+
+.form-footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #5f6368;
+    font-size: 14px;
+}
+
+.additional-links {
+    margin-top: 10px;
+}
+
+.additional-links a {
+    color: #1a73e8;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+@media (max-width: 600px) {
+    .name-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .google-form-container {
+        padding: 20px;
+        width: 100%;
+        max-width: 100%;
+    }
+}
